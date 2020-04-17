@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <title>WEB222 Store - Contact</title>
+  </head>
+
+  <body>
+    <div class="not-footer">
+      <header>
+        <a href="./index.html"><img class="logo" src="./images/Logo.jpg" alt="The Book Garden"/></a>
+        <a href="./contact.html">Contact Us</a>
+      </header>
+
+      <div class="main">
+        <h1>Contact Us</h1>
+        <p class="center">
+          If you have any feedback or concern, please fill out every fields in the form below.
+        </p>
+        <form id="info-form" action="https://httpbin.org/post" method="POST">
+          <label for="firstName">First Name</label>
+          <input
+            id="firstName"
+            name="firstName"
+            type="text"
+            required
+            placeholder="Sherlock"
+            title="Enter your first name"
+          />
+
+          <label for="lastName">Last Name</label>
+          <input
+            id="lastName"
+            name="lastName"
+            type="text"
+            required
+            placeholder="Holmes"
+            title="Enter your last name"
+          />
+
+          <label for="info-email">Email</label>
+          <input
+            id="info-email"
+            name="info-email"
+            type="email"
+            required
+            autocomplete="email"
+            placeholder="sherlock@gmail.com"
+            title="Enter your email"
+          />
+
+          <label for="address">Address</label>
+          <input
+            id="address"
+            name="address"
+            type="text"
+            required
+            placeholder="221B Baker Street"
+            title="Enter your address"
+          />
+
+          <label for="city">City</label>
+          <input
+            list="city-datalist"
+            id="city"
+            name="city"
+            type="text"
+            required
+            placeholder="London"
+            title="Enter your city"
+          />
+          <datalist id="city-datalist">
+            <option value="Toronto"> </option>
+            <option value="Montreal"> </option>
+            <option value="Vancouver"> </option>
+            <option value="Ottawa"> </option>
+            <option value="Calgary"> </option>
+            <option value="Edmonton"> </option>
+          </datalist>
+
+          <label for="postal-code">Postal Code</label>
+          <input
+            id="postal-code"
+            name="postal-code"
+            type="text"
+            required
+            autocomplete="postal-code"
+            placeholder="A1A 2B2"
+            pattern="^[A-Za-z]\d[A-Aa-z][ -]{0,1}\d[A-Za-z]\d"
+            title="Enter your postal code in the right format (Eg: A1A 2B2)"
+          />
+
+          <label for="phone">Phone Number</label>
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            required
+            autocomplete="tel"
+            placeholder="647 123 4433"
+            pattern="^\({0,1}\d{3}\){0,1}[ -/]{0,1}\d{3}[ -]{0,1}\d{4}"
+            title="Enter your Canadian phone number in the right format (Eg: 647 123 4433)"
+          />
+          <div id="phone-call">
+            <input id="phone-check" name="phone-check" type="checkbox" value="yes" checked />
+            <label for="phone-check">Call this number.</label>
+          </div>
+
+          <p>This is a:</p>
+          <div id="radio">
+            <input id="radio-1" name="radio" type="radio" value="question" checked />
+            <label for="radio-1">Question</label>
+            <input id="radio-2" name="radio" type="radio" value="comment" />
+            <label for="radio-2">Comment</label>
+            <input id="radio-3" name="radio" type="radio" value="orderProblem" />
+            <label for="radio-3">Order Problem</label>
+          </div>
+
+          <label id="order-num-label" for="order-num" hidden>Order Number</label>
+          <input
+            id="order-num"
+            name="order-num"
+            type="text"
+            placeholder="1234567890"
+            pattern="\d{10}"
+            title="Enter your order number (10 digits)"
+            hidden
+          />
+
+          <label for="message">Tell us here</label>
+          <textarea
+            id="message"
+            name="message"
+            required
+            maxlength="1000"
+            placeholder="Your message must contain maximum 1000 characters..."
+            title="Enter message regarding your concern within 1000 characters"
+          ></textarea>
+
+          <input name="name" type="hidden" value="Nguyen Huy Nhat Vy" />
+          <input class="submit" name="submit" type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div class="external-link">
+        <a href="https://www.facebook.com/" target="_blank"
+          ><i class="icon-facebook icon-large"></i
+        ></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><i class="icon-instagram icon-large"></i
+        ></a>
+        <a href="https://twitter.com/" target="_blank"><i class="icon-twitter icon-large"></i></a>
+      </div>
+      <form id="email-form" action="https://formspree.io/xgelnzaj" method="POST">
+        <input
+          id="footer-email"
+          name="footer-email"
+          type="email"
+          required
+          autocomplete="email"
+          placeholder="sherlock@gmail.com"
+          title="Enter your email"
+          size="30"
+        />
+        <input class="submit" name="submit" type="submit" value="Subscribe" />
+      </form>
+      <p>&copy; 2020 The Book Garden. All rights reserved.</p>
+    </footer>
+
+    <script src="./contactUs.js"></script>
+  </body>
+</html>

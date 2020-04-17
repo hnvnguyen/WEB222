@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <title>WEB222 Store</title>
+  </head>
+
+  <body>
+    <div class="not-footer">
+      <header>
+        <a href="./index.html"><img class="logo" src="./images/Logo.jpg" alt="The Book Garden"/></a>
+        <a href="./contact.html">Contact Us</a>
+      </header>
+
+      <div class="intro">
+        <img src="./images/Intro1.jpg" alt="" />
+        <div class="quote">
+          <p>
+            "The more that you read, the more things you will know. The more that you learn, the
+            more places you'll go."
+          </p>
+          <p class="color-gray">Dr. Seuss, I Can Read With My Eyes Shut!</p>
+        </div>
+      </div>
+
+      <div id="products">
+        <nav>
+          <p>
+            Categories<button type="button" class="nav-button">
+              <i class="icon-reorder icon-2x"></i>
+            </button>
+          </p>
+          <ul id="nav-categories"></ul>
+        </nav>
+        <main class="main">
+          <h1>All</h1>
+        </main>
+      </div>
+    </div>
+
+    <footer>
+      <div class="external-link">
+        <a href="https://www.facebook.com/" target="_blank"
+          ><i class="icon-facebook icon-large"></i
+        ></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><i class="icon-instagram icon-large"></i
+        ></a>
+        <a href="https://twitter.com/" target="_blank"><i class="icon-twitter icon-large"></i></a>
+      </div>
+      <form id="email-form" action="https://formspree.io/xgelnzaj" method="POST">
+        <input
+          id="footer-email"
+          name="footer-email"
+          type="email"
+          required
+          autocomplete="email"
+          placeholder="sherlock@gmail.com"
+          title="Enter your email"
+          size="30"
+        />
+        <input class="submit" name="submit" type="submit" value="Subscribe" />
+      </form>
+      <p>&copy; 2020 The Book Garden. All rights reserved.</p>
+    </footer>
+
+    <script src="./books.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
