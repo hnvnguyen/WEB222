@@ -113,9 +113,6 @@ function categoriesHandler() {
 function navHandler() {
   let button = document.querySelector('.nav-button');
   let navP = document.querySelector('nav p');
-  if (button.style.display !== 'none') {
-    navP.style.cursor = 'pointer'; // Make it seems clickable :))
-  }
   navP.addEventListener('click', function() {
     if (button.style.display !== 'none') {
       // if the category is chosen, hide the category list
