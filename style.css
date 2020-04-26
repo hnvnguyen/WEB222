@@ -257,7 +257,7 @@ textarea {
     display: none;
   }
   #nav-categories {
-    display: block;
+    display: block !important;
   }
   .div-wrapping {
     display: grid;
