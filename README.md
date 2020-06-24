@@ -6,6 +6,6 @@ This website that stores a number of free digital versions of books and is capab
 - Using a js file as a static books database
 - Sorting books by their categories
 - Performing client-side form validation
-- Using web responsive design techniques
+- Including responsive web design
 
 [Visit Website](https://hnvnguyen.github.io/WEB222/)
